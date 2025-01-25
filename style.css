@@ -9,18 +9,49 @@ body {
     width: 50px;
 }
 
+div {
+    position: relative;
+}
+
+#to-our-games, #to-stats, #to-introduction {
+    position: absolute;
+    top: -170px;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 4%;
+}
+
+.nav-a {
+    font-size: large;
+    padding: 10px;
+}
+
 .header {
     display: flex;
     background-color: lightblue;
     padding: 1%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    top: 0;
+    position: sticky;
+    z-index: 3;
 }
 
 .stats-container {
     display: flex;
+    align-items: center;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
